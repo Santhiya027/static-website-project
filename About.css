@@ -1,0 +1,551 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+}
+#nav-bar
+{
+    position: sticky;
+    top:0;
+    z-index:10;
+    
+}
+.navbar
+{
+    background-image: linear-gradient(to right, #0172af, #74febd);
+    padding: 0 !important;
+}
+
+.navbar-nav li
+{
+padding: 0 10px;
+}
+.navbar-nav li a
+{
+    color: #fff !important;
+    font-weight: 600;
+    float:right;
+    text-align:left;
+}
+
+.fa-bars
+{
+   
+    color: #fff;
+    font-size: 20px !important;
+}
+
+.navbar-toggler
+{
+    outline:none !important;
+}
+
+/*------Banner-------*/
+.slider {
+    position: relative;
+}
+
+.slides {
+    width: 500%;
+    height: 100%;
+    display: flex;
+}
+
+.slide {
+    width: 20%;
+    transition: 0.6s;
+    position: relative;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+}
+
+.caption {
+    position: absolute;
+    bottom: 70px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    color: #fff;
+   padding: 10px;
+    border-radius: 5px;
+}
+
+input[name="radio-btn"] {
+    display: none;
+}
+
+.navigation-manual {
+    position: absolute;
+    width: 100%;
+    bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.manual-btn {
+    border: 2px solid #fff;
+    padding: 5px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.manual-btn:not(:last-child) {
+    margin-right: 10px;
+}
+
+#radio1:checked ~ .first {
+    margin-left: 0;
+}
+
+#radio2:checked ~ .first {
+    margin-left: -20%;
+}
+
+#radio3:checked ~ .first {
+    margin-left: -40%;
+}
+.promo-title
+{   
+    font-size: 50px;
+    font-weight: 600;
+    margin-top: 100px;
+    text-align: center;
+}
+
+/*--------Heading----------*/
+
+#title
+{
+    background-image: linear-gradient(to right, #f8f9fa, #f8f9fa);
+    padding: 20px;
+}
+
+
+
+/*-------vision mission values--------*/
+
+#title
+{
+    background-image: linear-gradient(to right, #f8f9fa, #f8f9fa);
+    padding: 20px;
+}
+
+/*----------About Us-----------*/
+
+#about-section
+{
+    padding: 80px 0;
+}
+
+.about-section
+{   
+
+    background-color: linear-gradient(to right, #0172af, #74febd);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 20px;
+}
+.about-us h2 {
+ 
+    color: #0172af;
+    font-size: 1.8em;
+    margin-bottom: 20px;
+}
+.about-us p {
+    font-size: 20px;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 20px;
+}
+/*----------chat-box---------*/
+
+.chat-box a
+{
+    transition: 0.5s;
+}
+.chat-box p:hover a
+{
+    transform: translateY(-10px);
+}
+
+/*--------footer section--------*/
+#footer
+{
+    background-image: linear-gradient(to right, #0172af, #74febd);
+    color: #fff;
+}
+.footer-img
+{
+    width: 100%;
+}
+.footer-box
+{
+    padding: 20px;
+    margin-bottom: 50px
+}
+.footer-box img
+{
+    width: 60%;
+    margin-bottom: 20px;
+}
+.footer-box .form-control
+{
+    box-shadow: none !important;
+    border: none;
+    border-radius: 0;
+    margin-top: 25px;
+    max-width: 250px;
+}
+.footer-box .subscribe-btn
+{
+    box-shadow: none !important;
+    border: none;
+    border-radius: 0;
+    color: #fff;
+    margin-top: 30px;
+    background-image: linear-gradient(to right, #0172af, #74febd);
+}
+hr
+{
+background-color: #fff;
+}
+.copyright
+{
+    margin-bottom: 0;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+/*----------Get in touch----------*/
+.subscribe-btn
+{
+    padding: 8px 25px;
+}
+.hide {
+    display: none;
+}
+
+#successMsg {
+    padding: 10px;
+    background-color: #f8f9fa;
+    color: #3c763d;
+    border: 1px solid #f8f9fa;
+    border-radius: 4px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* Media Query for Responsive Design
+@media (max-width: 768px) {
+    .navbar-nav li {
+        padding: 0 5px;
+    }
+
+    .manual-btn {
+        padding: 3px;
+    }
+
+    .services1,
+    .about-section {
+        padding: 10px;
+        margin: 10px;
+    }
+
+    .footer-box img {
+        width: 100%;
+    }
+}
+
+*/
+
+
+/* Media Queries for Responsive Design */
+  
+  /* Smartphones (portrait and landscape) ----------- */
+  @media only screen and (max-width: 767px) {
+      /*-----NavBar-------*/
+      .navbar-brand img {
+        width: 130px;
+      }
+      .navbar-nav li {
+        padding: 0 8px;
+      }
+      .navbar-nav li a {
+        font-size: 16px;
+      }
+    /*-------slide section-------*/
+ /* Ensure the slider and slides have equal height and width */
+ .slider {
+    height: 400px; /* Adjust this value as needed */
+    width: 100%;
+    overflow: hidden;
+}
+
+.slides {
+    height: 100%;
+    width: 300%; /* Adjusted for three slides */
+    display: flex;
+}
+
+.slide {
+    height: 100%;
+    width: 33.33%; /* Adjusted for three slides */
+}
+
+.slide img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover; /* Ensures the image covers the entire slide area */
+}
+
+#radio1:checked ~ .first {
+    margin-left: 0;
+}
+
+#radio2:checked ~ .first {
+    margin-left: -33.33%;
+}
+
+#radio3:checked ~ .first {
+    margin-left: -66.66%;
+}
+
+/*-------Vision Mision-------*/
+
+/* Adjust navigation buttons for max width 767px */
+.manual-btn {
+    width: 10px;
+    height: 10px;
+}
+.caption {
+    bottom: 20px;
+    font-size: 12px;
+}
+.about-section{
+    padding: 20px;
+}
+.title
+{
+  font-size: 35px;
+}
+.about-us h2
+{
+   font-size: 25px;
+}
+.about-us p
+{
+   font-size: 15px;
+}
+  
+
+     /*-----Footer Section-------*/
+   .footer-box img {
+     width: 40%;
+   }
+   .footer-box .form-control .subscribe-btn{
+     max-width: 100%;
+   }
+   .footer-box p b{
+     font-size: 15px;
+  }
+  .footer-box p
+  {
+   font-size: 15px;
+  }
+  .copyright{
+    font-size: 15px;
+  }
+ }
+ 
+ /* Tablets (portrait and landscape) ----------- */
+ @media only screen and (min-width: 768px) and (max-width: 990px) {
+  /*-----NavBar-------*/
+  .navbar-brand img {
+    width: 140px;
+  }
+  .navbar-nav li {
+    padding: 0 9px;
+  }
+  .navbar-nav li a {
+    font-size: 17px;
+  }
+/*------slide section-------*/
+.slider {
+    height: 450px; /* Adjust this value as needed */
+    width: 100%;
+    overflow: hidden;
+}
+
+.slides {
+    height: 100%;
+    width: 300%; /* Adjusted for three slides */
+    display: flex;
+}
+
+.slide {
+    height: 100%;
+    width: 33.33%; /* Adjusted for three slides */
+}
+
+.slide img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover; /* Ensures the image covers the entire slide area */
+}
+
+#radio1:checked ~ .first {
+    margin-left: 0;
+}
+
+#radio2:checked ~ .first {
+    margin-left: -33.33%;
+}
+
+#radio3:checked ~ .first {
+    margin-left: -66.66%;
+}
+
+/* Adjust navigation buttons for this screen size range */
+.manual-btn {
+    width: 10px;
+    height: 10px;
+}
+.caption {
+    bottom: 30px;
+    font-size: 14px;
+}
+/*-----Vision Mision-------*/
+.title
+{
+  font-size: 38px;
+}
+.about-us h2
+{
+   font-size: 27px;
+}
+.about-us p
+{
+   font-size: 18px;
+}
+.about-section{
+    padding: 30px;
+}
+    /*-----Footer Section-------*/
+   .footer-box img {
+     width: 60%;
+   }
+   .footer-box .form-control .subscribe-btn{
+     max-width: 80%;
+   }
+   .footer-box p b{
+     font-size: 20px;
+  }
+  .footer-box p
+  {
+   font-size: 18px;
+  }
+ }
+ 
+ /* Desktops and laptops ----------- */
+ @media only screen and (min-width: 991px) {
+     /*-----NavBar-------*/
+     .navbar-brand img {
+       width: 150px;
+     }
+     .navbar-nav li {
+       padding: 0 10px;
+     }
+     .navbar-nav li a {
+       font-size: 18px;
+     }
+      /*------slide section-------*/
+      .slider {
+        height: 500px; /* Adjust this value as needed */
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .slides {
+        height: 100%;
+        width: 500%; /* Adjusted for five slides */
+        display: flex;
+    }
+
+    .slide {
+        height: 100%;
+        width: 20%; /* Adjusted for five slides */
+    }
+
+    .slide img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover; /* Ensures the image covers the entire slide area */
+    }
+
+    #radio1:checked ~ .first {
+        margin-left: 0;
+    }
+
+    #radio2:checked ~ .first {
+        margin-left: -20%;
+    }
+
+    #radio3:checked ~ .first {
+        margin-left: -40%;
+    }
+
+    #radio4:checked ~ .first {
+        margin-left: -60%;
+    }
+
+    #radio5:checked ~ .first {
+        margin-left: -80%;
+    }
+
+    /* Adjust navigation buttons for this screen size range */
+    .manual-btn {
+        width: 15px;
+        height: 15px;
+    }
+    .caption {
+        bottom: 40px;
+        font-size: 16px;
+    }
+     /*-----Vision Mision-------*/
+     .about-section{
+        padding: 20px;
+      }
+     .title
+    {
+       font-size: 41px;
+    }
+  
+
+    /*-----Footer Section-------*/
+   .footer-box img {
+    width: 60%;
+  }
+  .footer-box .form-control .subscribe-btn{
+    max-width: 80%;
+  }
+  .footer-box p b{
+    font-size: 20px;
+ }
+ .footer-box p
+ {
+  font-size: 18px;
+ }
+ }
+ 
